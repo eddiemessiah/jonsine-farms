@@ -1,27 +1,71 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap');
-
-@layer base {
-  body { 
-    font-family: 'Manrope', sans-serif; 
-    @apply bg-surface text-on-surface selection:bg-primary-fixed selection:text-on-primary-fixed;
-  }
+@theme {
+  --color-surface-container: #ebefed;
+  --color-inverse-surface: #2d3130;
+  --color-secondary-fixed: #ffdbcd;
+  --color-outline: #717972;
+  --color-on-tertiary: #ffffff;
+  --color-on-secondary-fixed-variant: #7c2e00;
+  --color-on-primary: #ffffff;
+  --color-surface-dim: #d7dbd9;
+  --color-on-surface: #181c1c;
+  --color-tertiary-container: #5b2b30;
+  --color-error-container: #ffdad6;
+  --color-secondary-fixed-dim: #ffb595;
+  --color-tertiary-fixed: #ffdadb;
+  --color-on-error: #ffffff;
+  --color-error: #ba1a1a;
+  --color-on-surface-variant: #414942;
+  --color-on-error-container: #93000a;
+  --color-surface-container-lowest: #ffffff;
+  --color-inverse-primary: #a1d2b1;
+  --color-primary-container: #14422a;
+  --color-secondary-container: #fc7127;
+  --color-on-tertiary-fixed-variant: #6b383d;
+  --color-secondary: #f59e0b;
+  --color-surface-container-low: #f1f4f2;
+  --color-tertiary-fixed-dim: #fbb4b9;
+  --color-on-tertiary-container: #d49297;
+  --color-surface-bright: #f7faf8;
+  --color-surface-tint: #22c55e;
+  --color-on-primary-fixed: #002110;
+  --color-primary: #047857;
+  --color-inverse-on-surface: #eef1ef;
+  --color-primary-fixed-dim: #a1d2b1;
+  --color-on-secondary: #ffffff;
+  --color-outline-variant: #c1c9c0;
+  --color-on-background: #181c1c;
+  --color-surface-container-high: #e6e9e7;
+  --color-primary-fixed: #bdeecc;
+  --color-surface-variant: #e0e3e1;
+  --color-on-primary-container: #7fae8f;
+  --color-surface: #f7faf8;
+  --color-tertiary: #41161b;
+  --color-surface-container-highest: #e0e3e1;
+  --color-on-secondary-fixed: #351000;
+  --color-on-tertiary-fixed: #360d13;
+  --color-background: #f7faf8;
+  --color-on-primary-fixed-variant: #224f36;
+  --color-on-secondary-container: #5c2000;
+  --font-headline: "Manrope", sans-serif;
+  --font-body: "Manrope", sans-serif;
+  --font-label: "Manrope", sans-serif;
 }
 
-@layer utilities {
-  .material-symbols-outlined {
-    font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
-  }
-  .glass-nav {
-    backdrop-filter: blur(24px);
-    -webkit-backdrop-filter: blur(24px);
-  }
-  .primary-gradient {
-    /* Updated for a warmer premium feel: #064e3b (very dark emerald) to #059669 (bright emerald) */
-    background: linear-gradient(135deg, #064e3b 0%, #059669 100%);
-  }
+body {
+  font-family: 'Manrope', sans-serif;
+}
+
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+}
+
+.glass-nav {
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+}
+
+.primary-gradient {
+  background: linear-gradient(135deg, #047857 0%, #14422a 100%);
 }

@@ -48,10 +48,10 @@ export default function Home() {
       {/* --- Hero Section --- */}
       <section className="relative min-h-[90vh] flex items-center pt-20 overflow-hidden bg-brand-dark">
         <div className="absolute inset-0 z-0">
-          <Image 
-            src="https://images.unsplash.com/photo-1628268909376-e8c554e2dd75?q=80&w=2940&auto=format&fit=crop" 
+          <img 
+            src="https://lh3.googleusercontent.com/aida-public/AB6AXuCuIr24R768InN79_-P_AZXnfmDCkFLcVMJ4N_8ofiIi-dSIyWBBeGxRkOAOJjbmmJRQS1PyMl_o5DaAlcPpx2-hZjDzaCPuG1h-JyZ3-xSKNNQFv42XdDKN8Wu7NStnnJcm-nQGo4PQceNN_hbdSNLdKTwac_RHbWYML2kxZWOsGg3gRGwLkgyWnSSCyrPE0dLZXR-QeRzm__21H6bGIV4ETCLUd8G_WZm0276_9iX5GnVfq2oDRfdtRJZGUwmw1UQx61vmJz-SH7R" 
             alt="Clean, premium butcher block" 
-            fill 
+            className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" 
             className="object-cover opacity-30 mix-blend-overlay"
             priority
           />
@@ -130,7 +130,7 @@ export default function Home() {
                </div>
 
                <div className="relative h-56 rounded-3xl overflow-hidden mt-auto">
-                  <Image src="https://images.unsplash.com/photo-1604503468373-2573ca00bbdb?q=80&w=2940&auto=format&fit=crop" fill alt="Fresh Chicken Cuts" className="object-cover group-hover:scale-105 transition-transform duration-700" />
+                  <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCT9LKjWxuTnt7aTU8i-mKAGd6Bxjoa408A3iaf3Ty1izl0h62cMZbBSelYijmhP9gK_Ajca6-veoYhUtGTwCHCrTq2C7f4qO5s0SK9EGowk3YWiRzr2F3xiHAm6C8xbduN1fxCrPneofpP3MwmDgDyYolaGN_CFBUwfsamZNk-3TIm-80dwlb4W25AQidazFuampPdqMCJLxkjyKj37LcXJjN8lkOEMNSNG5K0eFFTNEPZy8BzV0tNxe0NjfC9FyIGvd2W1LpDYxtb" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" alt="Fresh Chicken Cuts" className="object-cover group-hover:scale-105 transition-transform duration-700" />
                </div>
             </div>
 
@@ -158,7 +158,7 @@ export default function Home() {
                </div>
 
                <div className="relative h-56 rounded-3xl overflow-hidden mt-auto">
-                  <Image src="https://images.unsplash.com/photo-1615141982883-c7ad0e69fd62?q=80&w=2874&auto=format&fit=crop" fill alt="Fresh Seafood" className="object-cover opacity-80 group-hover:scale-105 transition-transform duration-700 mix-blend-overlay" />
+                  <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBcqqcojvhKVRgxjS7xIG3oZbCAN2moeMtLQp60i5qmdvp1PHL5MwclvtWlnEffaK5KBRAHwvajBDIGr41DB8cWlDMQJHgyrsXGvJdUxUK9Hm6bKguLOBu7XSs0LbwWtRuhrv9f_SmyIJ1KImR2hCkuAVtzV0jEJLQKQ9EzXi9CvnzspCxuIzyKli_w9zI55bHR_3NtxLrxKf9SwpcrCbeR28zlUNH0lRAj_jAVUlbnAoA-iDT7Z9PwWuo1FclLQRmQZiyJvAi69zaw" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" alt="Fresh Seafood" className="object-cover opacity-80 group-hover:scale-105 transition-transform duration-700 mix-blend-overlay" />
                </div>
             </div>
 

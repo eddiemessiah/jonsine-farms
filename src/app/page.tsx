@@ -46,7 +46,7 @@ export default function Home() {
       <section className="relative min-h-[90vh] flex items-center pt-20 overflow-hidden bg-brand-dark">
         <div className="absolute inset-0 z-0">
           <img 
-            src="https://images.unsplash.com/photo-1607623814075-e51df1bdc82f?q=80&w=2940&auto=format&fit=crop" 
+            src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?q=80src="https://images.unsplash.com/photo-1607623814075-e51df1bdc82f?q=80&w=2940&auto=format&fit=crop"w=2940src="https://images.unsplash.com/photo-1607623814075-e51df1bdc82f?q=80&w=2940&auto=format&fit=crop"auto=formatsrc="https://images.unsplash.com/photo-1607623814075-e51df1bdc82f?q=80&w=2940&auto=format&fit=crop"fit=crop" 
             alt="Professional butcher cutting fresh premium meats" 
             className="w-full h-full object-cover opacity-40 mix-blend-overlay"
           />
@@ -124,7 +124,7 @@ export default function Home() {
                </div>
 
                <div className="relative h-64 rounded-2xl overflow-hidden mt-auto">
-                  <img src="https://images.unsplash.com/photo-1604503468373-2573ca00bbdb?q=80&w=2940&auto=format&fit=crop" alt="Fresh Chicken Cuts" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-[cubic-bezier(0.16,1,0.3,1)]" />
+                  <img src="https://images.unsplash.com/photo-1587595431973-160d0d94add1?q=80src="https://images.unsplash.com/photo-1604503468373-2573ca00bbdb?q=80&w=2940&auto=format&fit=crop"w=2000src="https://images.unsplash.com/photo-1604503468373-2573ca00bbdb?q=80&w=2940&auto=format&fit=crop"auto=formatsrc="https://images.unsplash.com/photo-1604503468373-2573ca00bbdb?q=80&w=2940&auto=format&fit=crop"fit=crop" alt="Fresh Chicken Cuts" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-[cubic-bezier(0.16,1,0.3,1)]" />
                </div>
             </div>
 

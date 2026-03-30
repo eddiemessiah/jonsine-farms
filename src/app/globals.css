@@ -1,71 +1,24 @@
 @import "tailwindcss";
 
 @theme {
-  --color-surface-container: #ebefed;
-  --color-inverse-surface: #2d3130;
-  --color-secondary-fixed: #ffdbcd;
-  --color-outline: #717972;
-  --color-on-tertiary: #ffffff;
-  --color-on-secondary-fixed-variant: #7c2e00;
-  --color-on-primary: #ffffff;
-  --color-surface-dim: #d7dbd9;
-  --color-on-surface: #181c1c;
-  --color-tertiary-container: #5b2b30;
-  --color-error-container: #ffdad6;
-  --color-secondary-fixed-dim: #ffb595;
-  --color-tertiary-fixed: #ffdadb;
-  --color-on-error: #ffffff;
-  --color-error: #ba1a1a;
-  --color-on-surface-variant: #414942;
-  --color-on-error-container: #93000a;
-  --color-surface-container-lowest: #ffffff;
-  --color-inverse-primary: #a1d2b1;
-  --color-primary-container: #14422a;
-  --color-secondary-container: #fc7127;
-  --color-on-tertiary-fixed-variant: #6b383d;
-  --color-secondary: #f59e0b;
-  --color-surface-container-low: #f1f4f2;
-  --color-tertiary-fixed-dim: #fbb4b9;
-  --color-on-tertiary-container: #d49297;
-  --color-surface-bright: #f7faf8;
-  --color-surface-tint: #22c55e;
-  --color-on-primary-fixed: #002110;
-  --color-primary: #047857;
-  --color-inverse-on-surface: #eef1ef;
-  --color-primary-fixed-dim: #a1d2b1;
-  --color-on-secondary: #ffffff;
-  --color-outline-variant: #c1c9c0;
-  --color-on-background: #181c1c;
-  --color-surface-container-high: #e6e9e7;
-  --color-primary-fixed: #bdeecc;
-  --color-surface-variant: #e0e3e1;
-  --color-on-primary-container: #7fae8f;
-  --color-surface: #f7faf8;
-  --color-tertiary: #41161b;
-  --color-surface-container-highest: #e0e3e1;
-  --color-on-secondary-fixed: #351000;
-  --color-on-tertiary-fixed: #360d13;
-  --color-background: #f7faf8;
-  --color-on-primary-fixed-variant: #224f36;
-  --color-on-secondary-container: #5c2000;
-  --font-headline: "Manrope", sans-serif;
-  --font-body: "Manrope", sans-serif;
-  --font-label: "Manrope", sans-serif;
+  --color-brand-green: #064E3B; /* Emerald 900 */
+  --color-brand-light-green: #10B981; /* Emerald 500 */
+  --color-brand-orange: #F59E0B; /* Amber 500 */
+  --color-brand-cream: #FAFAF9; /* Stone 50 */
+  --color-brand-dark: #1C1917; /* Stone 900 */
+  
+  --font-sans: var(--font-jakarta), sans-serif;
+  --font-serif: var(--font-playfair), serif;
 }
 
-body {
-  font-family: 'Manrope', sans-serif;
-}
-
-.material-symbols-outlined {
-  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
-}
-
-.glass-nav {
-  backdrop-filter: blur(24px);
-  -webkit-backdrop-filter: blur(24px);
-}
-
-.primary-gradient {
-  background: linear-gradient(135deg, #047857 0%, #14422a 100%);
+@layer utilities {
+  .glass-nav {
+    @apply bg-white/80 backdrop-blur-xl border-b border-stone-200/50 shadow-sm;
+  }
+  .btn-primary {
+    @apply bg-brand-green text-white px-8 py-3 rounded-full font-bold tracking-wide hover:bg-brand-green/90 transition-all active:scale-95 shadow-md flex items-center gap-2;
+  }
+  .btn-secondary {
+    @apply bg-brand-orange text-white px-8 py-3 rounded-full font-bold tracking-wide hover:bg-brand-orange/90 transition-all active:scale-95 shadow-md flex items-center gap-2;
+  }
 }

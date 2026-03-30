@@ -1,24 +1,25 @@
 @import "tailwindcss";
 
 @theme {
-  --color-brand-green: #064E3B; /* Emerald 900 */
-  --color-brand-light-green: #10B981; /* Emerald 500 */
-  --color-brand-orange: #F59E0B; /* Amber 500 */
-  --color-brand-cream: #FAFAF9; /* Stone 50 */
-  --color-brand-dark: #1C1917; /* Stone 900 */
+  --color-brand-green: #0A3222; /* Deeper, richer green */
+  --color-brand-light-green: #14593E; 
+  --color-brand-orange: #D97706; /* Warmer, less neon orange */
+  --color-brand-cream: #FDFCFB; /* Warm tinted white */
+  --color-brand-dark: #12100F; /* Tinted off-black, not pure black */
+  --color-brand-surface: #F5F4F1; /* Card background */
   
-  --font-sans: var(--font-jakarta), sans-serif;
-  --font-serif: var(--font-playfair), serif;
+  --font-sans: var(--font-sans), sans-serif;
+  --font-serif: var(--font-serif), serif;
 }
 
 @layer utilities {
   .glass-nav {
-    @apply bg-white/80 backdrop-blur-xl border-b border-stone-200/50 shadow-sm;
+    @apply bg-white/85 backdrop-blur-xl border-b border-black/5 shadow-sm transition-all;
   }
   .btn-primary {
-    @apply bg-brand-green text-white px-8 py-3 rounded-full font-bold tracking-wide hover:bg-brand-green/90 transition-all active:scale-95 shadow-md flex items-center gap-2;
+    @apply bg-brand-green text-white px-8 py-3.5 rounded-full font-bold tracking-wide hover:bg-brand-green/90 transition-all active:scale-95 shadow-md flex items-center justify-center gap-2;
   }
   .btn-secondary {
-    @apply bg-brand-orange text-white px-8 py-3 rounded-full font-bold tracking-wide hover:bg-brand-orange/90 transition-all active:scale-95 shadow-md flex items-center gap-2;
+    @apply bg-brand-orange text-white px-8 py-3.5 rounded-full font-bold tracking-wide hover:bg-brand-orange/90 transition-all active:scale-95 shadow-md flex items-center justify-center gap-2;
   }
 }
